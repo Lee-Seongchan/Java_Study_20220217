@@ -30,10 +30,30 @@ public class Encapsulation {
 		return username;
 	}
 	
+	// getter 
+	// public
+	
+	
 	public void showInfo() {
 		System.out.println(username);
 		System.out.println(password);
 		System.out.println(provider);
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getProvider() {
+		return provider;
+	}
+
+	public void setProvider(String provider) {
+		this.provider = provider;
 	}
 	
 }

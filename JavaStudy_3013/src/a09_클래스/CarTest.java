@@ -31,8 +31,10 @@ public class CarTest {
 	 * }
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Car c1 = new Car();
+		Car c3; // 변수 선언(Car 참조 자료형)
+		new Car(); //Car 객체 생성 -> 힙메모리 영역에 Car 클래스 사이즈 만큼 메모리를 빌려 할당하는 것
 		c1.company = "KIA";
 		c1.model = "k5";
 		c1.oil = 5;
