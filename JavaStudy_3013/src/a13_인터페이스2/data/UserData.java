@@ -20,7 +20,12 @@ public class UserData {
 	
 	public void showUsers() {
 		for(int i = 0; i < users.length; i++) {
-			users[i].showUser();
+			if(users[i]== null) {
+				continue;
+			}
+		System.out.println(users[i]);
+		
+			
 		}
 	}
 }
