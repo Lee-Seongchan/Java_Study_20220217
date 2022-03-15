@@ -1,4 +1,4 @@
-package a_08함수;
+package a08함수;
 
 public class FunctionEx {
 	

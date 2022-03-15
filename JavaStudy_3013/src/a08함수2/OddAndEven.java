@@ -1,4 +1,4 @@
-package a_08함수2;
+package a08함수2;
 
 import java.util.Scanner;
 

@@ -1,21 +1,29 @@
 package a13_인터페이스2.data;
 
 import a13_인터페이스2.model.User;
-
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+@Data
 public class UserData {
 	
+	private static UserData instance;
 	private User[] users;
 	
-	public User[] getUsers() {
-		return users;
-	}
-
-	public void setUsers(User[] users) {
+	private UserData(User[] users) {
 		this.users = users;
 	}
-
-	public UserData() {
-		// TODO Auto-generated constructor stub
+		
+	
+	public static UserData getInstance(User[] users) {
+		if(instance == null) {
+			instance = new UserData(users);
+		}
+		return instance;
+	}
+	
+	public static UserData getInstance() {
+		return instance;
 	}
 	
 	public void showUsers() {
