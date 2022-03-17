@@ -17,9 +17,10 @@ public class HashSetTest {
 		strSet.remove("이성찬3");
 		System.out.println(strSet);
 		
-		Iterator<String> ir = strSet.iterator();
-		while(ir.hasNext()) { 
-			String str = ir.next();
+		//값 조회하기
+		Iterator<String> ir = strSet.iterator();//strSet을 iterator형태로 변환
+		while(ir.hasNext()) { //하나씩 꺼내는 작업은 반복 ir.hasNext가 True면 계속 반복
+			String str = ir.next(); //꺼내기
 			if(str.equals("이성찬1")) {
 				System.out.println(str);
 			}

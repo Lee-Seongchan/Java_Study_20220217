@@ -24,36 +24,46 @@ public class HashMapTest2 {
 		
 		String str = "텀블러";
 
-		if(hashMap.containsKey(str)) {
-			System.out.println(hashMap.get(str));
-		}else {
-			System.out.println("해당 단어는 번역할 수 없습니다.");
-		}
+//		if(hashMap.containsKey(str)) {
+//			System.out.println(hashMap.get(str));
+//		}else {
+//			System.out.println("해당 단어는 번역할 수 없습니다.");
+//		}
 		
-		System.out.println("************************");
-		System.out.println();
+		
 		Set<String> set = hashMap.keySet();
 		Iterator<String> ir = set.iterator();
 		while(ir.hasNext()) {
-			System.out.println(ir.next());
-			System.out.println("----------------");
-			System.out.println(hashMap.get(ir.next()));
+//		System.out.println(ir.next());
+//		텀블러
+//		머그컵
+//		책
+//		아메리카노
+////		System.out.println("----------------");
+//		
+		System.out.println(hashMap.get(ir.next()));
+
+//		tumbler
+//		mugCup
+//		book
+//		americano
+			
 		}
 		
-		System.out.println();
-		System.out.println("*************************");
+//		System.out.println();
+//		System.out.println("*************************");
 		
-		if(str.equals("머그컵")) {
-			System.out.println("mugCup");
-		}else if(str.equals("텀블러")) {
-			System.out.println("tumbler");
-		}else if(str.equals("아메리카노")) {
-			System.out.println("americano");
-		}else if(str.equals("책")) {
-			System.out.println("book");
-		}else {
-			System.out.println("해당 단어는 번역할 수 없습니다.");
-		}
+//		if(str.equals("머그컵")) {
+//			System.out.println("mugCup");
+//		}else if(str.equals("텀블러")) {
+//			System.out.println("tumbler");
+//		}else if(str.equals("아메리카노")) {
+//			System.out.println("americano");
+//		}else if(str.equals("책")) {
+//			System.out.println("book");
+//		}else {
+//			System.out.println("해당 단어는 번역할 수 없습니다.");
+//		}
 	}
 
 }
